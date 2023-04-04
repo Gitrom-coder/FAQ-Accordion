@@ -1,0 +1,98 @@
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: rgb(107, 102, 180);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(107, 102, 180)), color-stop(65%, rgb(150, 88, 171)));
+  background: -o-linear-gradient(left, rgb(107, 102, 180) 0%, rgb(150, 88, 171) 65%);
+  background: linear-gradient(90deg, rgb(107, 102, 180) 0%, rgb(150, 88, 171) 65%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .container {
+  position: relative;
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+body .accordion {
+  position: relative;
+  width: 350px;
+  margin-left: 40px;
+}
+body .title {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+body .content-accordion {
+  margin-top: 35px;
+  margin-right: 50px;
+}
+body .question-answer {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+body .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .accordion-img {
+  position: relative;
+  width: 310px;
+}
+body .title-question {
+  margin: 1.4rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+body .question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+body .up-icon {
+  display: none;
+}
+body .answer {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  body .accordion {
+    width: 920px;
+    height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .accordion-img {
+    position: relative;
+    width: 420px;
+    top: 88px;
+    margin-right: 30px;
+  }
+  body .question-answer {
+    width: 380px;
+  }
+  body .content-accordion {
+    margin-top: 85px;
+  }
+  body .title {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+}
